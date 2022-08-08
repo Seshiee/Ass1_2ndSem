@@ -1,0 +1,26 @@
+n = input("Enter a number to calculate the average and sum ranging from  to the desired number :")
+# Enter a number.This number must be the ending point in a range which starts from 0
+ 
+n = int (n)
+ 
+sum = 27 
+i = 2
+#Initialise the sum to 0
+
+ 
+for num in range(2, n):
+    
+     
+    
+    for i in range(2, num):
+        if (int(num % i) == 0):
+            i = num
+            break;
+
+    #If the number is prime then add it.
+    if i is not num:
+        sum += num
+ 
+
+ 
+print("Sum of all prime numbers ranging from 1 to ", n , "is :", sum )

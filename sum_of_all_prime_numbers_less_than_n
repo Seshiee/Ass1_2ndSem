@@ -1,0 +1,9 @@
+def comput():
+    even = []
+    for i in range(1,10000+1):
+        if i%2==0:
+            even.append(i)
+    even_len = len(even)
+    avg = sum(even)/even_len
+    return avg
+print("the sum of all even integers between 1 and 10000 is" ,comput()) 
